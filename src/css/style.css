@@ -1,0 +1,177 @@
+/* Reset start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+}
+/* Reset end */
+
+/* Base classes start */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+/* Base classes end */
+
+/* Fonts and colors start */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.light-cyan {
+  color: hsl(193, 38%, 86%);
+}
+
+.neon-green {
+  color: hsl(150, 100%, 66%);
+}
+
+.neon-green-bg {
+  background-color: hsl(150, 100%, 66%);
+}
+
+.grayish-blue {
+  color: hsl(217, 19%, 38%);
+}
+
+.dark-grayish-blue {
+  color: hsl(217, 19%, 24%);
+}
+
+.dark-grayish-blue-bg {
+  background-color: hsl(217, 19%, 24%);
+}
+
+.dark-blue {
+  color: hsl(218, 23%, 16%);
+}
+
+/* Fonts and colors end */
+
+body {
+  font: 800 25px/1.5 "Manrope", sans-serif;
+
+  background-color: hsl(218, 23%, 16%);
+}
+
+.card-container {
+  width: 37.5vw;
+  height: 46vh;
+
+  border-radius: 1rem;
+  padding: 3rem;
+
+  position: relative;
+
+  justify-content: center;
+  min-width: 320px;
+
+  min-height: 350px;
+  max-height: 350px;
+}
+
+.card-container .card {
+  align-items: center;
+  height: 100%;
+}
+
+.card-container .card-content {
+  align-items: center;
+  height: 100%;
+}
+
+.card-content .card-title {
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+}
+
+.card-content .advice-text-container {
+  flex-grow: 2;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content .card-separator {
+  margin-top: 1rem;
+}
+
+.card .card-update-btn {
+  position: absolute;
+  top: 100%;
+  transform: translate(0, -50%);
+
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+/* Hover start */
+.card .card-update-btn:hover {
+  box-shadow: 0 0 20px 10px hsl(150, 100%, 66%);
+}
+
+/* Hover end */
+
+/* Target start */
+
+/* Target end */
+
+/* Media start */
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 1rem;
+  }
+  .card-content .card-separator > img {
+    content: url("/src/images/pattern-divider-mobile.svg");
+  }
+}
+/* Media end */

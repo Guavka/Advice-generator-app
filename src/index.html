@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../src/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <main id="main" class="flex-column">
+      <div class="card-container flex-column dark-grayish-blue-bg">
+        <div class="card flex-column">
+          <div class="card-content flex-column">
+            <h6 class="card-title text-uppercase neon-green">
+              Advice #<span id="card-title">117</span>
+            </h6>
+            <div class="advice-text-container flex-column">
+              <q class="advice-text light-cyan text-center">
+                <span class="advice-content" id="advice-content">
+                  It is easy to sit up and take notice, what's difficult is
+                  getting up and taking action.</span
+                >
+              </q>
+            </div>
+            <!-- /.advice-text-container -->
+            <div class="card-separator">
+              <img
+                src="/src/images/pattern-divider-desktop.svg"
+                alt="------------"
+                id="card-separator-image"
+              />
+            </div>
+            <!-- /.card-separator -->
+          </div>
+          <!-- /.card-content flex-column -->
+
+          <button
+            type="button"
+            id="update-btn"
+            class="card-update-btn neon-green-bg"
+          >
+            <img
+              src="/src/images/icon-dice.svg"
+              alt="dice"
+              class="neon-green-bg"
+            />
+          </button>
+        </div>
+        <!-- /.card flex-column-->
+      </div>
+      <!-- /.card-container flex-column -->
+    </main>
+    <!-- /#main.flex-column -->
+  </body>
+  <script src="../app.js"></script>
+</html>
